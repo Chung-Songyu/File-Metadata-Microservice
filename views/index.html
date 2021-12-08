@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Metadata Microservice</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1><span id="header">File Metadata Microservice</span></h1>
+    <p>Upload a file to view its metadeta (name, type & size)</p>
+    <div class="container">
+      <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
+        <input type="file" name="upfile">
+        <br/>
+        <input type="submit" value="UPLOAD">
+      </form>
+    </div>
+  </body>
+</html>

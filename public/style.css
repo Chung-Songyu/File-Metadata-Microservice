@@ -1,0 +1,36 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+	background-color: rgba(200, 245, 180, 0.4);
+	text-align: center;
+  margin: 50px;
+}
+
+h1 {
+  margin: 0px 0px 60px 0px;
+}
+
+#header {
+  border-bottom: 1px solid black;
+  padding: 0px 0px 5px 0px;
+}
+
+.container {
+  background-color: rgba(130, 75, 75, 0.3);
+  margin: 50px auto 0px auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 450px;
+}
+
+input[type="file"] {
+  margin: 35px auto 0px auto;
+}
+
+input[type="submit"] {
+  margin: 20px auto 35px auto;
+}
+
+input#button {
+  width: 230px;
+}
