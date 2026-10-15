@@ -1,0 +1,19 @@
+# (Netlify deployment) This file is used solely for deployment to Netlify
+# https://docs.netlify.com/build/frameworks/framework-setup-guides/express/
+
+[functions]
+  external_node_modules = ["express"]
+  node_bundler = "esbuild"
+
+# Url endpoint ending in "/api/fileanalyse" is redirected to "/api/fileanalyse" routing in "/netlify/functions/server.js"
+[[redirects]]
+  force = true
+  from = "/api/fileanalyse"
+  status = 200
+  to = "/.netlify/functions/server/api/fileanalyse"
+
+# Catch-all for invalid url endpoints - Error page
+[[redirects]]
+  from = "/*"
+  status = 404
+  to = "/html/error.html"
