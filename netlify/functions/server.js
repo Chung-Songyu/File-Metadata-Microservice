@@ -19,9 +19,9 @@ app.use(express.static('public'));
 // (Netlify deployment) Netlify > Projects > csy-file-met-data > Project overview > Project configuration (continued..)
 // (Netlify deployment) (..continued) > Developer settings > Build settings > Publish directory > value set to "public"
 // (Netlify deployment) index.html is hence served from "public" directory/folder (by default)
-app.get('/', (req, res) => {
+/*app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, "public/index.html"));
-});
+});*/
 
 //// Create "uploads" folder if it doesn't exist
 // (Netlify deployment) - Not used. Uploaded file will be temporarily stored in memory instead of saved to disk
